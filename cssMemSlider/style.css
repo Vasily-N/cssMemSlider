@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
 }
 
 #imgs-box {
@@ -67,8 +68,8 @@
 
 .label {
     margin: 0em;
-    width: 1em;
-    height: 1em;
+    width: 1.3em;
+    height: 1.3em;
 
     display: flex;
     align-items: center;
@@ -76,8 +77,8 @@
 }
 
 .radio__fake {
-    width: 0.3em;
-    height: 0.3em;
+    width: 0.55em;
+    height: 0.55em;
 
     border: 0.1em solid #70a6fF;
     border-radius: 50%;
