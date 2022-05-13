@@ -2,10 +2,12 @@
     width: 80vw;
     margin: auto;
     padding: 1vw;
+    padding-bottom: 1em;
 
     display: flex;
     flex-direction: column-reverse;
     background-color: #333333;
+    gap: 1em;
 }
 
 #slider-part {
@@ -46,7 +48,7 @@
 
 .p {
     width: 80vw;
-    margin-right: 22vw;
+    margin: 0vh 22vw 0vh 0vh;
     color: white;
 }
 
@@ -56,17 +58,15 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .radio {
     visibility: hidden;
     height: 0em;
-    margin: 0em;
 }
 
 .label {
-    margin: 0px;
+    margin: 0em;
     width: 1em;
     height: 1em;
 
@@ -85,6 +85,7 @@
     transition: 0.1s;
 }
 
+.label:hover { cursor: pointer; }
 
 .label:hover > .radio__fake {
     border: 0.2em solid white;
@@ -107,10 +108,12 @@
 #r4:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc((80vw) * -3)); }
 
 @media screen and (max-width: 640px) {
-    #slider-part { flex-direction: column }
-    #ps-box { width: 80vw; }
-    .p { margin-right: 0vw; }
-    #slider { gap: 1em; }
+    #ps-box { width: 78vw; }
+    .p { margin-right: 2vw; }
+    #slider-part { 
+        flex-direction: column;
+        gap: 1em; 
+    }
     #radios {
         width: 80vw; 
         justify-content: center;
