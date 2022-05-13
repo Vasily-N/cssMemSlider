@@ -55,6 +55,7 @@
 
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -77,8 +78,23 @@
 .radio__fake {
     width: 0.3em;
     height: 0.3em;
-    border: 0.1em solid white;
+
+    border: 0.1em solid #70a6fF;
+    border-radius: 50%;
+    background-color: #70a6fF;
+    transition: 0.1s;
 }
+
+
+.label:hover > .radio__fake {
+    border: 0.2em solid white;
+    background-color: white;
+}
+
+#r1:checked ~ #slider > #slider-part > #radios > .label[for="r1"] > .radio__fake { background-color: transparent; }
+#r2:checked ~ #slider > #slider-part > #radios > .label[for="r2"] > .radio__fake { background-color: transparent; }
+#r3:checked ~ #slider > #slider-part > #radios > .label[for="r3"] > .radio__fake { background-color: transparent; }
+#r4:checked ~ #slider > #slider-part > #radios > .label[for="r4"] > .radio__fake { background-color: transparent; }
 
 #r1:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc((80vw + 2vw) * -0)); }
 #r2:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc((80vw + 2vw) * -1)); }
