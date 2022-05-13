@@ -105,3 +105,14 @@
 #r2:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc((80vw) * -1)); }
 #r3:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc((80vw) * -2)); }
 #r4:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc((80vw) * -3)); }
+
+@media screen and (max-width: 640px) {
+    #slider-part { flex-direction: column }
+    #ps-box { width: 80vw; }
+    .p { margin-right: 0vw; }
+    #slider { gap: 1em; }
+    #radios {
+        width: 80vw; 
+        justify-content: center;
+    }
+}
