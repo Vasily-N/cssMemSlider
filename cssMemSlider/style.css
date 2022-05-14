@@ -29,7 +29,7 @@ body { background-color: #333333; }
 #imgs {
     display: flex;
     width: calc((80vw + 2vw)*4);
-    transition: 1s
+    transition: transform 1s;
 }
 
 .img {
@@ -45,8 +45,8 @@ body { background-color: #333333; }
 
 #ps {
     display: flex;
-    width: calc((80vw)*4);
-    transition: 1s
+    width: calc(80vw * 4);
+    transition: transform 1s;
 }
 
 .p {
@@ -85,7 +85,7 @@ body { background-color: #333333; }
     border: 0.1em solid #70a6fF;
     border-radius: 50%;
     background-color: #70a6fF;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
 .label:hover { cursor: pointer; }
@@ -100,15 +100,15 @@ body { background-color: #333333; }
 #r3:checked ~ #slider > #slider-part > #radios > .label[for="r3"] > .radio__fake { background-color: transparent; }
 #r4:checked ~ #slider > #slider-part > #radios > .label[for="r4"] > .radio__fake { background-color: transparent; }
 
-#r1:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc((80vw + 2vw) * -0)); }
-#r2:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc((80vw + 2vw) * -1)); }
-#r3:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc((80vw + 2vw) * -2)); }
-#r4:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc((80vw + 2vw) * -3)); }
+#r1:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc(25% * -0)); }
+#r2:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc(25% * -1)); }
+#r3:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc(25% * -2)); }
+#r4:checked ~ #slider > #imgs-box > #imgs { transform: translateX(calc(25% * -3)); }
 
-#r1:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc((80vw) * -0)); }
-#r2:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc((80vw) * -1)); }
-#r3:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc((80vw) * -2)); }
-#r4:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc((80vw) * -3)); }
+#r1:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc(25% * -0)); }
+#r2:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc(25% * -1)); }
+#r3:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc(25% * -2)); }
+#r4:checked ~ #slider > #slider-part > #ps-box > #ps { transform: translateX(calc(25% * -3)); }
 
 @media screen and (max-width: 640px) {
     #ps-box { width: 78vw; }
